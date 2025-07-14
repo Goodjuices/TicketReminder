@@ -40,28 +40,28 @@ TicketReminder 是一个帮助用户管理重要事件和目标的移动应用�
 
 > **注意**: 开始之前，请确保已完成 [React Native 环境设置](https://reactnative.dev/docs/environment-setup)。
 
-1. 克隆项目
+# 1. 克隆项目
 
 git clone https://github.com/Goodjuices/TicketReminder.git
 cd TicketReminder
 
-2. 安装依赖
+# 2. 安装依赖
 bashnpm install
-# 或者
+ 或者
 yarn install
 
-3. 运行 Metro
+# 3. 运行 Metro
 bashnpm start
-# 或者
+或者
 yarn start
 
-4. 运行应用
+# 4. 运行应用
 新开一个终端窗口，运行：
 bashnpm run android
-# 或者
+或者
 yarn android
 
-技术栈
+# 技术栈
 框架: React Native
 数据存储: AsyncStorage
 通知: React Native Push Notifications
@@ -69,7 +69,7 @@ yarn android
 列表滑动: React Native Swipe List View
 状态管理: React Context API
 
-问题排查
+# 问题排查
 如果遇到构建或运行问题，请参考 React Native 故障排除指南。
 贡献
 欢迎提交 Issue 和 Pull Request！
@@ -78,10 +78,10 @@ yarn android
 作者
 GitHub: @Goodjuices
 
-🙏 致谢
+#  🙏 致谢
 
 感谢 React Native 团队提供的优秀框架
 感谢所有使用和支持这个项目的人！
 
 
-⭐ 如果这个项目对你有帮助，请给一个 Star！
+# ⭐ 如果这个项目对你有帮助，请给一个 Star！
