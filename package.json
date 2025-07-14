@@ -7,12 +7,24 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean-start": "react-native start --reset-cache",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "clean-all": "cd android && ./gradlew clean && cd .. && npx react-native start --reset-cache",
+    "rebuild": "cd android && ./gradlew clean && cd .. && npm install && npx react-native run-android",
+    "reset": "rm -rf node_modules && rm -rf android/app/build && npm install"
   },
   "dependencies": {
+    "@notifee/react-native": "^9.1.8",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-picker/picker": "^2.11.1",
+    "@react-native/new-app-screen": "0.80.1",
     "react": "19.1.0",
     "react-native": "0.80.1",
-    "@react-native/new-app-screen": "0.80.1"
+    "react-native-background-timer": "^2.4.1",
+    "react-native-date-picker": "^5.0.13",
+    "react-native-swipe-list-view": "^3.2.9",
+    "react-native-vector-icons": "^10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

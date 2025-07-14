@@ -8,8 +8,15 @@ buildscript {
         kotlinVersion = "2.1.20"
     }
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
         google()
         mavenCentral()
+        maven { url 'https://www.jitpack.io' }
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
@@ -19,3 +26,18 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+// 添加这个 allprojects 部分
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        google()
+        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
+    }
+}

@@ -1,97 +1,87 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+TicketReminder 
+一个简洁实用的 React Native 应用，用于管理事件提醒和目标倒计时。
 
-# Getting Started
+项目介绍
+TicketReminder 是一个帮助用户管理重要事件和目标的移动应用。通过设置事件提醒和目标倒计时，用户可以更好地规划时间，不错过任何重要时刻。
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+功能特点
+### 事件提醒 (Event Reminder)
+- 设置特定日期和时间的事件
+- 自定义提醒时间（5分钟到1天前）
+- 准时推送通知提醒
 
-## Step 1: Start Metro
+### 目标倒计时 (Goal Countdown)
+- 设定目标日期
+- 每日上午9点推送剩余天数提醒
+- 直观显示距离目标还有多少天
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### 其他特性
+- 简洁美观的用户界面
+- 滑动删除功能
+- 本地数据持久化存储
+- 支持英文界面(后续会增加中文等其他语言支持)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 设备兼容性
 
-```sh
-# Using npm
-npm start
+已测试设备：
+- 三星手机
+- 华为手机
 
-# OR using Yarn
+
+## 快速开始
+
+### 下载使用
+1. 从 [Releases](https://github.com/你的用户名/TicketReminder/releases) 页面下载最新的 APK 文件
+2. 在手机设置中允许"安装未知来源应用"
+3. 点击 APK 文件安装
+4. 打开应用即可使用！
+
+### 开发环境设置
+
+> **注意**: 开始之前，请确保已完成 [React Native 环境设置](https://reactnative.dev/docs/environment-setup)。
+
+1. 克隆项目
+
+git clone https://github.com/Goodjuices/TicketReminder.git
+cd TicketReminder
+
+2. 安装依赖
+bashnpm install
+# 或者
+yarn install
+
+3. 运行 Metro
+bashnpm start
+# 或者
 yarn start
-```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
+4. 运行应用
+新开一个终端窗口，运行：
+bashnpm run android
+# 或者
 yarn android
-```
 
-### iOS
+技术栈
+框架: React Native
+数据存储: AsyncStorage
+通知: React Native Push Notifications
+日期选择: React Native Date Picker
+列表滑动: React Native Swipe List View
+状态管理: React Context API
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+问题排查
+如果遇到构建或运行问题，请参考 React Native 故障排除指南。
+贡献
+欢迎提交 Issue 和 Pull Request！
+开源协议
+本项目采用 MIT 协议。
+作者
+GitHub: @Goodjuices
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+🙏 致谢
 
-```sh
-bundle install
-```
+感谢 React Native 团队提供的优秀框架
+感谢所有使用和支持这个项目的人！
 
-Then, and every time you update your native dependencies, run:
 
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+⭐ 如果这个项目对你有帮助，请给一个 Star！
