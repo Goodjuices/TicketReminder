@@ -1,87 +1,112 @@
-TicketReminder 
-一个简洁实用的 React Native 应用，用于管理事件提醒和目标倒计时。
+### TicketReminder
 
-项目介绍
-TicketReminder 是一个帮助用户管理重要事件和目标的移动应用。通过设置事件提醒和目标倒计时，用户可以更好地规划时间，不错过任何重要时刻。
+A simple and practical React Native app for managing event reminders and goal countdowns.
 
-功能特点
-### 事件提醒 (Event Reminder)
-- 设置特定日期和时间的事件
-- 自定义提醒时间（5分钟到1天前）
-- 准时推送通知提醒
+### Project Overview
 
-### 目标倒计时 (Goal Countdown)
-- 设定目标日期
-- 每日上午9点推送剩余天数提醒
-- 直观显示距离目标还有多少天
+TicketReminder helps you keep track of important events and deadlines. By setting up event reminders and goal countdowns, you’ll never miss a key moment.
 
-### 其他特性
-- 简洁美观的用户界面
-- 滑动删除功能
-- 本地数据持久化存储
-- 支持英文界面(后续会增加中文等其他语言支持)
+### Features
 
-## 设备兼容性
+### Event Reminder
 
-已测试设备：
-- 三星手机
-- 华为手机
+Schedule events at specific dates and times
 
+Choose how far in advance you’re notified (from 5 minutes up to 1 day before)
 
-## 快速开始
+Receive local push notifications right when you need them
 
-### 下载使用
-1. 从 [Releases](https://github.com/你的用户名/TicketReminder/releases) 页面下载最新的 APK 文件
-2. 在手机设置中允许"安装未知来源应用"
-3. 点击 APK 文件安装
-4. 打开应用即可使用！
+### Goal Countdown
 
-### 开发环境设置
+Set a target date for any goal
 
-> **注意**: 开始之前，请确保已完成 [React Native 环境设置](https://reactnative.dev/docs/environment-setup)。
+Get a daily notification at 9 AM with the remaining days
 
-# 1. 克隆项目
+See at a glance how many days remain until your goal
 
+### Other Highlights
+
+Clean, attractive user interface
+
+Swipe-to-delete functionality
+
+Local data persistence
+
+English UI (with plans to add Chinese and other languages)
+
+### Device Compatibility
+
+Tested on:
+
+Samsung phones
+
+Huawei phones
+
+Quick Start
+
+### Download & Install
+
+Search Ticketreminder on Google Play.
+
+Visit the Releases page and download the latest APK.
+
+In your phone’s settings, enable “Install unknown apps.”
+
+Tap the APK to install.
+
+Open the app and start using it!
+
+### Local Development Setup
+
+Note: Make sure you’ve completed the React Native environment setup first: https://reactnative.dev/docs/environment-setup
+
+Clone the repo
 git clone https://github.com/Goodjuices/TicketReminder.git
 cd TicketReminder
 
-# 2. 安装依赖
-bashnpm install
- 或者
+Install dependencies
+npm install
+or
 yarn install
 
-# 3. 运行 Metro
-bashnpm start
-或者
+Start Metro Bundler
+npm start
+or
 yarn start
 
-# 4. 运行应用
-新开一个终端窗口，运行：
-bashnpm run android
-或者
+Run on Android
+Open a new terminal window and run:
+npm run android
+or
 yarn android
 
-# 技术栈
-框架: React Native
-数据存储: AsyncStorage
-通知: React Native Push Notifications
-日期选择: React Native Date Picker
-列表滑动: React Native Swipe List View
-状态管理: React Context API
+Tech Stack
 
-# 问题排查
-如果遇到构建或运行问题，请参考 React Native 故障排除指南。
-贡献
-欢迎提交 Issue 和 Pull Request！
-开源协议
-本项目采用 MIT 协议。
-作者
-GitHub: @Goodjuices
+Framework: React Native
 
-#  🙏 致谢
+Storage: AsyncStorage
 
-感谢 React Native 团队提供的优秀框架
-感谢所有使用和支持这个项目的人！
+Notifications: react-native-push-notification
 
+Date Picker: @react-native-community/datetimepicker
 
-# ⭐ 如果这个项目对你有帮助，请给一个 Star！
+Swipe List: react-native-swipe-list-view
+
+State Management: React Context API
+
+Troubleshooting
+
+If you run into build or runtime issues, please refer to the official React Native troubleshooting guide: https://reactnative.dev/docs/troubleshooting
+
+Contributing
+
+Feel free to open Issues or submit Pull Requests!
+
+### License
+
+This project is licensed under the MIT License.
+
+### Acknowledgments
+Thank you to the React Native team for their excellent framework, and to everyone who uses and supports this project!
+
+If you find this project helpful, please give it a star on GitHub!
